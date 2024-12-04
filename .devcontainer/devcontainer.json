@@ -1,0 +1,28 @@
+{
+	"name": "docker-codespaces",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"containerEnv": {
+		"SHELL": "/bin/zsh"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/python": {
+			"version": "3.13"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"github.copilot"
+			]
+		},
+		"codespaces": {
+			"extensions": [
+				"github.copilot"
+			]
+		}
+	},
+
+	"remoteUser": "vscode"
+}
