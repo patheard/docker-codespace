@@ -1,16 +1,19 @@
 {
 	"name": "docker-codespaces",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	// The Docker image that you will be using as a development container
+	"image": "mcr.microsoft.com/devcontainers/universal:linux",
+	// Environment variables to set in the development container
 	"containerEnv": {
 		"SHELL": "/bin/zsh"
 	},
-	"features": {
+	// Available features: https://containers.dev/features
+	"features": { 
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/python": {
 			"version": "3.13"
 		}
 	},
-
+	// Extenstions to install: separate lists for VS Code and Codespaces
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -23,6 +26,5 @@
 			]
 		}
 	},
-
 	"remoteUser": "vscode"
 }
