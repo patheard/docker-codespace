@@ -1,7 +1,7 @@
 {
 	"name": "docker-codespaces",
 	// The Docker image that you will be using as a development container
-	"image": "mcr.microsoft.com/devcontainers/universal:linux",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	// Environment variables to set in the development container
 	"containerEnv": {
 		"SHELL": "/bin/zsh"
