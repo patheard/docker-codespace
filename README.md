@@ -12,3 +12,6 @@ docker run -it alpine:latest sh
 ```
 
 If you want to attach to a running Codespace from VS Code, install the [Codespaces extension](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces).
+
+## Local development
+The devcontainer can also be used for localhost development if you have Docker and the [VS Code Devcontainers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed.
